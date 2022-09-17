@@ -1,19 +1,9 @@
 package stepDefinitions;
 
-import java.util.Iterator;
-import java.util.Set;
-
 import org.junit.Assert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-
-
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
 import pageObjects.CheckoutPage;
-import pageObjects.LandingPage;
 import utils.TestContextSetup;
 
 public class CheckoutPageStepDefinition {
@@ -38,6 +28,7 @@ public void  verify_user_has_ability_enter_promo()
 	
 	Assert.assertTrue(checkoutPage.VerifyPromoBtn());
 	Assert.assertTrue(checkoutPage.VerifyPlaceOrder());
+	System.out.println("test");
 	
 }
 
